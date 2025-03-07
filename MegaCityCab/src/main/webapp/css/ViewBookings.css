@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5dbda; /* Light pink background color */
+    color: #333; /* Dark text for better contrast */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px; /* Space at the top */
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #140aa6; /* Blue text for header */
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #333; /* Darker text for paragraphs */
+    margin-top: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: #333; /* Dark color for table text */
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333; /* Ensure the header text is visible */
+}
+
+td a {
+    color: #2196F3; /* Blue for links */
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+td a:hover {
+    color: #0d8bf2; /* Darker blue on hover */
+    text-decoration: underline;
+}
+
+/* Action column */
+td {
+    color: #555; /* Dark color for text in action column */
+}
+
+/* Back Button Styling */
+.back-button {
+    background-color: #ff6b6b; /* Soft red button */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 30px; /* Adds space between the table and the button */
+    border: none;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #f2bdbd; /* Lighter pink on hover */
+    color: #333;
+}
+
+/* Centering the Back Button */
+.button-container {
+    text-align: center;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table {
+        width: 95%;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    .back-button {
+        width: 80%;
+    }
+}
