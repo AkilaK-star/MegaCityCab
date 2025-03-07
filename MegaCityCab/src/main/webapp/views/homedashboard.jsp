@@ -19,24 +19,36 @@
         }
     %>
 
-    <h1>Welcome, <%= user.getUsername() %>!</h1> <!-- Display the logged-in user's username -->
-    <p>Welcome to your dashboard</p>
-    
-    <!-- User-specific content -->
-    <div>
-        <h3>Book a Ride</h3>
-        <p>Book your ride from here.</p>
-        <a href="booking.jsp">Go to Booking</a>
-    </div>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Welcome, <%= user.getUsername() %>!</h1> <!-- Display the logged-in user's username -->
+            <p>Welcome to your dashboard</p>
+        </header>
 
-    <div>
-        <h3>Your Past Bookings</h3>
-        <p>View your previous ride bookings.</p>
-        <a href="viewbookings.jsp">Go to Your Bookings</a>
-    </div>
+        <!-- Dashboard Content Section -->
+        <section class="dashboard-content">
+            <!-- Book a Ride Section -->
+            <div class="section">
+                <h3>Book a Ride</h3>
+                <p>Book your ride from here.</p>
+                <a href="booking.jsp" class="button">Go to Booking</a>
+            </div>
 
-    <div>
-        <a href="/MegaCityCab/LogoutServlet">Logout</a>
+            <!-- View Past Bookings Section -->
+            <div class="section">
+                <h3>Your Past Bookings</h3>
+                <p>View your previous ride bookings.</p>
+			    <a href="ViewMyBookings.jsp" class="button">Go to Your Bookings</a>
+
+            </div>
+
+            <!-- Logout Button -->
+            
+        </section>
+        <div class="logout">
+                <a href="/MegaCityCab/LogoutServlet" class="button logout-btn">Logout</a>
+            </div>
     </div>
 </body>
 </html>
