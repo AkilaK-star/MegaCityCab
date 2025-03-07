@@ -1,0 +1,76 @@
+@charset "UTF-8"; 
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2bdbd;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #ff6b6b; /* Changed table header background */
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #ff8787; /* Adjusted alternate row color */
+}
+
+tr:nth-child(odd) {
+    background-color: #ff6b6b; /* Applied primary color */
+}
+
+td {
+    color: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Back Button Styles */
+.back-button-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.back-button {
+    background-color: #ffffff; /* Changed button background */
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.back-button:hover {
+    background-color: #ffffff; /* Adjusted hover color */
+}
