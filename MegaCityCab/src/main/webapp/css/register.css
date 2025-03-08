@@ -7,6 +7,7 @@ body {
     flex-direction: column;
     height: 100vh;
     background-color:  #f5dbda;
+    background: linear-gradient(135deg, #f9e6e6, #f5d8d8), url(image/Assets/bg4.jpg); /* Fixed the gradient and image order */
     margin: 0;
 }
 

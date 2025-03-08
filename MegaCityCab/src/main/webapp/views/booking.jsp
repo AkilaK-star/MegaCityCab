@@ -3,6 +3,7 @@
 <%@ page import="dao.LocationDAO" %>
 <html>
 <head>
+<body style="background: url('../Assets/bg3.jpg') no-repeat center center; background-size: cover;">
     <title>Book a Ride</title>
     <link rel="stylesheet" href="../css/booking.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

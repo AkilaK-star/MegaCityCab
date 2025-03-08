@@ -5,6 +5,7 @@
 
 <html>
 <head>
+<body style="background: url('../Assets/bg3.jpg') no-repeat center center; background-size: cover;">
     <title>View Bookings</title>
     <link rel="stylesheet" href="../css/ViewBookings.css">
 </head>

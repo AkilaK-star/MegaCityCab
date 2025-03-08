@@ -4,6 +4,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f5dbda;
+    background: linear-gradient(135deg, #f9e6e6, #f5d8d8), url(image/Assets/car.jpeg); /* Fixed the gradient and image order */
     color: #333;
     margin: 0;
     padding: 0;

@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <html>
 <head>
+<body style="background: url('../Assets/bg3.jpg') no-repeat center center; background-size: cover;">
     <title>User Registration</title>
     <link rel="stylesheet" href="../css/register.css">
 </head>

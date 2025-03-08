@@ -4,6 +4,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f2bdbd; /* Soft beige background */
+    background: linear-gradient(135deg, #f9e6e6, #f5d8d8), url(image/Assets/car.jpeg); /* Fixed the gradient and image order */
     color: #003092; /* Dark blue text */
     margin: 0;
     padding: 0;
@@ -49,7 +50,7 @@ header p {
 
 /* Section Styles */
 .section {
-    background-color: #FFFFFF; /* White background for each section */
+    background-color:#f2bdbd; /* White background for each section */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

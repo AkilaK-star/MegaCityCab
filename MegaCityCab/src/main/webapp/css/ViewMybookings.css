@@ -4,6 +4,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f2bdbd; /* Soft pastel pink */
+    background: linear-gradient(135deg, #f9e6e6, #f5d8d8), url(image/Assets/car.jpeg); /* Fixed the gradient and image order */
     color: #333; /* Darker text for contrast */
     margin: 0;
     padding: 0;
@@ -20,7 +21,7 @@ h2 {
     color: #8d4a4a; /* Warm muted brown */
     font-size: 36px;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 /* Table Container */

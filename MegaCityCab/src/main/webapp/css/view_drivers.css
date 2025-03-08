@@ -5,6 +5,7 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f4f8; /* Light background for a clean look */
     color: #333333; /* Dark text for good readability */
+    background: linear-gradient(135deg, #f9e6e6, #f5d8d8), url(image/Assets/bg4.jpg); /* Fixed the gradient and image order */
     margin: 0;
     padding: 0;
     line-height: 1.6;

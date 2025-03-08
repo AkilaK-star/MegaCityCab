@@ -3,6 +3,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<body style="background: url('../Assets/bg4.jpg') no-repeat center center; background-size: cover;">
+
     <title>Booking Confirmation</title>
     <style type="text/css">
     /* General Styles */

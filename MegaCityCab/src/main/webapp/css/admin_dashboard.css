@@ -2,6 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f5dbda;
+    background:url(image/Assets/car.jpeg); /* Fixed the gradient and image order */
     margin: 0;
     padding: 20px;
     text-align: center;

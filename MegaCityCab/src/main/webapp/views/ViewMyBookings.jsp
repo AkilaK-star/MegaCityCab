@@ -7,6 +7,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<body style="background: url('../Assets/bg3.jpg') no-repeat center center; background-size: cover;">
     <title>View My Bookings</title>
     <link rel="stylesheet" href="../css/ViewMybookings.css"> 
 </head>

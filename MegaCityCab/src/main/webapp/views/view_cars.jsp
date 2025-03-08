@@ -2,6 +2,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+<body style="background: url('../Assets/bg3.jpg') no-repeat center center; background-size: cover;">
     <title>Car Management</title>
     <link rel="stylesheet" href="../css/view_cars.css">
 </head>

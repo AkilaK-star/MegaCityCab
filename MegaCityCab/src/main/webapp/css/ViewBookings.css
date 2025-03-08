@@ -4,6 +4,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f5dbda; /* Light pink background color */
+    background: linear-gradient(135deg, #f9e6e6, #f5d8d8), url(image/Assets/car.jpeg); /* Fixed the gradient and image order */ 
     color: #333; /* Dark text for better contrast */
     margin: 0;
     padding: 0;
@@ -31,7 +32,7 @@ table {
     width: 80%;
     margin: 20px auto;
     border-collapse: collapse;
-    background-color: white;
+    background-color: #f8cffa;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -67,7 +68,7 @@ td {
 /* Back Button Styling */
 .back-button {
     background-color: #ff6b6b; /* Soft red button */
-    color: #fff;
+    color: #6fe37b;
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 16px;

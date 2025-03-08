@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<body style="background: url('../Assets/bg3.jpg') no-repeat center center; background-size: cover;">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="../css/admin_dashboard.css">
 </head>
