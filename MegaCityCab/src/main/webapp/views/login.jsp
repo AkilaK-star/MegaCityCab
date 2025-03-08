@@ -3,8 +3,9 @@
 <head>
     <title>Login</title>
     <link rel="stylesheet" href="../css/login.css">
+    
 </head>
-<body>
+<body style="background: url('../Assets/bg3.jpg') no-repeat center center; background-size: cover;">
     <form action="/MegaCityCab/Loginservlet" method="post">
         <h2>Login</h2>
         <label>Username:</label>
@@ -20,6 +21,6 @@
         <% } %>
         <a href="register.jsp">Don't have an account? Register here</a>
     </form>
-    
 </body>
+
 </html>

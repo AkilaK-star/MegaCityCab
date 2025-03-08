@@ -6,10 +6,14 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(135deg, #f9e6e6, #f5d8d8); /* Soft pastel pink gradient */
+    background: linear-gradient(135deg, #f9e6e6, #f5d8d8), url(image/Assets/car.jpeg); /* Fixed the gradient and image order */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
     margin: 0;
     transition: background 0.3s ease;
 }
+
 
 .login-container {
     background: #ffffff; /* White background for the form */

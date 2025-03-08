@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+/* Global Styles */
+body {
+	
+    font-family: Arial, sans-serif;
+    background-color: #f5dbda; /* Soft pastel pink background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background:url(image/Assets/car.jpeg); /* Fixed the gradient and image order */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #2196F3; /* Blue color for heading */
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Adds emphasis to the heading */
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.2em;
+    color: #555; /* Lighter color for paragraph */
+    margin-bottom: 40px;
+    max-width: 300px; /* Controls width of the paragraph */
+    line-height: 1.5;
+}
+
+/* Box Container for Manager Dashboard */
+div {
+    background: linear-gradient(to right, #f2bdbd, #ffe4e1); /* Gradient for a more dynamic look */
+    border-radius: 20px; /* Smooth rounded corners for a sleek appearance */
+    padding: 50px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow for a floating effect */
+    max-width: 600px; /* Increased max-width */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+/* Hover Effect for Box */
+div:hover {
+    transform: translateY(-10px); /* Slight lift effect */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Heading inside box */
+h3 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for the heading */
+}
+
+/* Link Styling */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #2196F3; /* Matching link color */
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #0d8bf2; /* Darker blue on hover */
+}
+
+/* Logout Button Styling */
+a[href="/MegaCityCab/LogoutServlet"] {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px; /* More rounded button */
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-align: center;
+    width: auto;
+    transition: background-color 0.3s ease;
+}
+
+a[href="/MegaCityCab/LogoutServlet"]:hover {
+    background-color: #f2bdbd; /* Lighter pastel pink on hover */
+    
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    div {
+        width: 90%;
+        padding: 25px;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    a {
+        font-size: 1em;
+    }
+
+    a[href="/MegaCityCab/LogoutServlet"] {
+        font-size: 1.1em;
+        padding: 10px 20px;
+    }
+}
