@@ -1,8 +1,8 @@
-/* General Styles */
+_/* General Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f5dbda;
-    background:url(image/Assets/car.jpeg); /* Fixed the gradient and image order */
+    background: linear-gradient(135deg, #f9e6e6, #f5d8d8), url(image/Assets/bg4.jpg); /* Fixed the gradient and image order */
     margin: 0;
     padding: 20px;
     text-align: center;
@@ -22,7 +22,7 @@ p {
 
 /* Dashboard Containers */
 div {
-    background: white;
+    background: #f1d6dd;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);

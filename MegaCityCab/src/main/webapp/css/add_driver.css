@@ -4,6 +4,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f2bdbd; /* Light pink background */
+    background: linear-gradient(135deg, #f9e6e6, #f5d8d8), url(image/Assets/bg4.jpg); /* Fixed the gradient and image order */
     color: #333; /* Dark text color for readability */
     margin: 0;
     padding: 0;

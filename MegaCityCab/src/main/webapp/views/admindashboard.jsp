@@ -1,8 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="model.DBConnection" %>
 <!DOCTYPE html>
 <html>
 <head>
-<body style="background: url('../Assets/bg3.jpg') no-repeat center center; background-size: cover;">
+<body style="background: url('../Assets/bg4.jpg') no-repeat center center; background-size: cover;">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="../css/admin_dashboard.css">
 </head>
@@ -22,15 +23,32 @@
             </div>
 
             <div class="section">
-                <h3>System Settings</h3>
-                <p>Manage system settings and configurations.</p>
-                <a href="systemSettings.jsp" class="button">Go to System Settings</a>
+                <h3>View Bookings</h3>
+                <p>Here you can view bookings.</p>
+                <a href="viewbookings.jsp" class="button">Go to Bookings</a>
             </div>
 
-            <div class="logout">
+            <!-- Manage Cars Section -->
+            <div class="section">
+                <h3>Manage Cars</h3>
+                <p>Here you can add new cars and view existing ones.</p>
+                <a href="manageCars.jsp" class="button">Manage Cars</a>
+                <a href="view_cars.jsp" class="button">View Cars</a>
+
+            </div>
+
+            <!-- Manage Drivers Section -->
+            <div class="section">
+                <h3>Manage Drivers</h3>
+                <p>Here you can add new drivers and view existing ones.</p>
+                <a href="manageDrivers.jsp" class="button">Manage Drivers</a>
+                <a href="view_drivers.jsp" class="button">View Drivers</a>
+            </div>
+            
+        </section>
+        <div class="logout">
                 <a href="/MegaCityCab/LogoutServlet" class="button logout-btn">Logout</a>
             </div>
-        </section>
     </div>
 </body>
 </html>
