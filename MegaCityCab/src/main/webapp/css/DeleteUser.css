@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #292929; /* Dark background */
+    background: linear-gradient(135deg, #f9e6e6, #f5d8d8), url(image/Assets/bg4.jpg);
+    color: #ffffff;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Form Container */
+form {
+    background-color: #4c4c80; /* Deep purple-blue */
+    padding: 15px;  /* Reduced padding for a smaller box */
+    border-radius: 8px;
+    width: 320px; /* Set a fixed width for a compact design */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+/* Headings */
+h2 {
+    color: #211f21;
+    font-size: 1.5rem; /* Smaller but still prominent */
+    margin-bottom: 15px;
+}
+
+/* Paragraphs */
+p {
+    color: #ffffff;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+/* Input Fields */
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #333;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+form input::placeholder {
+    color: #666;
+}
+
+/* Buttons */
+button {
+    background-color: #20515d;
+    color: #ffffff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-right: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #2f7585;
+}
+
+/* Links */
+a {
+    color: #cfcfcf;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

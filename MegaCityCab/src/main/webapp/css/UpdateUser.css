@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #292929, #1e1e1e);
+    background: linear-gradient(135deg, #f9e6e6, #f5d8d8), url(image/Assets/car.jpeg); /* Fixed the gradient and image order */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Main Heading */
+h2 {
+    font-size: 4rem;
+    color: #211f21;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Form Container */
+form {
+    background-color: #65ba6a; /* Deep teal */
+    padding: 25px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Labels */
+label {
+    color: #ffffff;
+    font-size: 1rem;
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+/* Input Fields */
+input[type="text"], input[type="email"], select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    background: #ffffff;
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 12px;
+    transition: 0.3s;
+}
+
+/* Input Focus Effect */
+input:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+/* Button Styling */
+button {
+    background-color: #20515d;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #2f7585;
+}
+
+/* Form Spacing */
+form div {
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    form {
+        width: 90%;
+    }
+}
