@@ -4,88 +4,119 @@
 <html>
 <head>
     <title>Update Car</title>
-    <link rel="stylesheet" href="../css/UpdateCar.css">
-    <style type="text/css">
-    /* Reset default styles */
+<style type="text/css">
+/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #292929; /* Dark background */
-    color: #ffffff; /* White text */
-    margin: 20px;
-}
-
-h2 {
-    color: #ffffff;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-form {
-    background-color: #2f7585; /* Deep teal for the form */
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f1f1; /* Light background for better contrast */
+    color: #333; /* Dark text for readability */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 30px;
 }
 
+/* Heading Styling */
+h2 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form Styling */
+form {
+    background-color: #ffffff; /* White background for the form */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a modern feel */
+    width: 100%;
+    max-width: 600px; /* Form width limitation */
+    transition: transform 0.3s ease;
+}
+
+/* Form field styling */
 label {
-    color: #ffffff;
-    font-size: 1rem;
-    margin-right: 10px;
-    display: block;
+    color: #333;
+    font-size: 1.1rem;
     margin-bottom: 5px;
+    display: block;
 }
 
 input[type="text"], input[type="number"], select {
     width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #8d8d8d; /* Light gray border */
-    background-color: #ffffff;
-    color: #292929;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd; /* Lighter border color */
+    background-color: #fafafa; /* Slightly lighter background */
+    color: #333;
     font-size: 1rem;
-    margin-bottom: 15px;
-}
-
-button {
-    background-color: #20515d; /* Dark greenish blue */
-    color: #ffffff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-button:hover {
-    background-color: #2f7585; /* Lighter teal on hover */
-}
-
-form div {
     margin-bottom: 20px;
+    transition: border-color 0.3s ease;
 }
 
-select {
-    background-color: #ffffff;
-    color: #292929;
-    padding: 10px;
+/* Focus effects for inputs */
+input[type="text"]:focus, input[type="number"]:focus, select:focus {
+    border-color: #4CAF50; /* Green color on focus */
+    outline: none;
 }
 
+/* Button Styling */
 button {
-    font-size: 1rem;
+    background-color: #4CAF50; /* Green button */
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    width: 100%;
 }
-    
-    </style>
+
+/* Button hover and focus effects */
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Select box styling */
+select {
+    padding: 12px;
+}
+
+/* Grouping form fields */
+.form-group {
+    margin-bottom: 25px;
+}
+
+/* Optional: Responsive Styling */
+@media (max-width: 768px) {
+    form {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+</style>
 </head>
 <body>
-    <h2>Update Car</h2>
     <form action="/MegaCityCab/UpdateCarServlet" method="POST">
+        <h2>Update Car</h2>
         <input type="hidden" name="car_id" value="<%= ((Car) request.getAttribute("car")).getCarId() %>">
         
         <label for="car_model">Car Model:</label>
